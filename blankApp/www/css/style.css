@@ -1,0 +1,49 @@
+/* Empty. Add your own CSS if you like */
+.login{
+    background-repeat: no-repeat;
+  background-position:center;
+  background-image: url('../img/login.png');
+}
+.bg1{
+     background-repeat: no-repeat;
+/*  background-position:top right;*/
+    background-size:cover;
+    background-attachment:fixed;
+  background-image: url('../img/bg1.png');
+}
+.button{
+    color:#fff;
+}
+.has-footer{
+    bottom:66px;
+}
+h2{
+    font-weight:bold !important;
+}
+.ul1 >.item>.icon {
+    font-size:20px;
+     color:#213a61;
+}
+.ul1> a.item{
+    font-size:15px;
+    color:#fff;
+}
+.ul1>a:hover{
+    border-left:5px solid #406a88;
+    color:#213a61;
+    font-weight:bold;
+}
+.pro{
+    background:#406788;
+}
+.pro:hover{
+   
+   background:#213a61;
+  
+}
+.ul1> .item-thumbnail>img{
+    border-radius:50%;
+}
+
+
+

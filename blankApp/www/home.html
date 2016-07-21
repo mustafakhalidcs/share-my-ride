@@ -1,0 +1,42 @@
+<ion-view view-title="Home" class="bg1">
+   <ion-content scrollbar-y="true" has-bouncing="false"   class="has-footer " style="background:transparent; " >
+          
+   
+            <img src="img/bg.png" class="full-image" />
+     <ion-list >
+      <ion-item collection-repeat="item in items" type="item-text-wrap" style="background:transparent;border:none; padding-top:0px; " >
+          <div class="card" style=" margin:0px; ">
+  <div class="item item-thumbnail-left " width="400" height="200" style="padding-bottom:0px;padding-right:0px;background:#ebebeb;  ">
+   <img ng-src="{{item.image}}" />
+      <h2 style="color:#155877;text-transform:capitalize;">{{item.name}}</h2>
+      <p> <span style="color:#155877; font-weight:bold;">To:</span>   {{item.to}}</p>
+       <p> <span style="color:#155877; font-weight:bold;">From:</span>   {{item.from}}</p>
+      <label style="background:#b3cfda; padding:2px 10px; float:right;">{{item.date}}</label>
+  </div>
+ 
+</div>
+        
+      </ion-item>
+    </ion-list>
+
+          
+        </ion-content>
+     
+
+
+      <ion-footer-bar align-title="left"  style="background:transparent; border-top:5px solid #ded3c4; height:66px;" >
+
+
+
+          <div class="row">
+          <div class="col">
+              
+              <a class="button button-block" style="background:#155877; font-weight:bold; margin-top:0px; padding:2px; height:41px;">Driving</a>
+            
+              </div>
+          <div class="col">
+               <button class="button button-block" style=" background:#2cbbca; font-weight:bold; margin-top:0px; padding:2px; height:41px;">Riding</button>
+              </div>
+          </div>
+</ion-footer-bar>
+</ion-view>
