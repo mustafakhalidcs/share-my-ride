@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "D:/E/installed softwares/wamp/www/blankApp/gulpfile.js",
+        "D:/E/installed softwares/wamp/www/blankApp/plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
+        "D:/E/installed softwares/wamp/www/blankApp/www/lib/ionic/js/ionic.min.js",
+        "D:/E/installed softwares/wamp/www/blankApp/www/lib/ionic/js/ionic.js"
+    ]
+}

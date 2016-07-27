@@ -18,6 +18,7 @@
     background-attachment:fixed;
   background-image: url('../img/bg.png');
 }
+<<<<<<< HEAD
 .bg5{
      background-repeat: no-repeat;
 /*  background-position:top right;*/
@@ -25,6 +26,8 @@
     background-attachment:fixed;
   background-image: url('../img/bg5.jpg');
 }
+=======
+>>>>>>> origin/master
 .button{
     color:#fff;
 }
@@ -76,8 +79,12 @@ h2{
     width: 100%;
     height:0;
     padding-bottom: 100%;
+<<<<<<< HEAD
     background: transparent; 
     border:2px dotted #000;
+=======
+    background: rgba(255,255,255,0.8); 
+>>>>>>> origin/master
     -moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
     border-radius: 50%;
@@ -144,12 +151,21 @@ h2{
 .dform input::-webkit-input-placeholder {
  color:    white;
 }
+<<<<<<< HEAD
 
 .dform input::-moz-placeholder {
     color:white;
     
 }
 
+=======
+
+.dform input::-moz-placeholder {
+    color:white;
+    
+}
+
+>>>>>>> origin/master
 .dform .cancel{
      white-space:nowrap;
     color:#10645b;

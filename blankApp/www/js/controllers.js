@@ -42,6 +42,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ProfileCtrl', function($scope) {
+<<<<<<< HEAD
+=======
   $scope.items = [
   { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
      { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
@@ -54,13 +56,15 @@ angular.module('starter.controllers', [])
      
 })
 .controller('BrowCtrl', function($scope) {
-  $scope.imges=[
+  $scope.message="Hello from BrowCtrl";
+  var images=[
         {image:"img/bg.png"},
         {image:"img/ionic.png"},
         {image:"img/bg1.png"}
        
     ];
-    $scope.current = '';
+    $scope.url="img/bg.png";
+    $scope.album = images;
      
 })
 .controller('ModalCtrl', function($scope, $ionicModal) {
@@ -118,6 +122,109 @@ angular.module('starter.controllers', [])
   
 })
 .controller('HomeCtrl', function($scope, $ionicModal) {
+>>>>>>> origin/master
+  $scope.items = [
+  { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
+     { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
+       { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
+       { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
+       { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
+       { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
+       { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"}
+  ];
+<<<<<<< HEAD
+     
+})
+.controller('BrowCtrl', function($scope) {
+  $scope.imges=[
+        {image:"img/bg.png"},
+        {image:"img/ionic.png"},
+        {image:"img/bg1.png"}
+       
+    ];
+    $scope.current = '';
+     
+=======
+   $ionicModal.fromTemplateUrl('login.html', {
+    scope: $scope,
+       animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+    $scope.openModal = function() {
+    $scope.modal.show();
+  };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+    $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  
+//  $scope.createContact = function(u) {        
+//    $scope.contacts.push({ name: u.firstName + ' ' + u.lastName });
+//    $scope.modal.hide();
+//  };
+  
+  
+>>>>>>> origin/master
+})
+.controller('ModalCtrl', function($scope, $ionicModal) {
+  
+   $ionicModal.fromTemplateUrl('my-modal.html', {
+    scope: $scope,
+       animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+    $scope.openModal = function() {
+    $scope.modal.show();
+  };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+    $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  
+//  $scope.createContact = function(u) {        
+//    $scope.contacts.push({ name: u.firstName + ' ' + u.lastName });
+//    $scope.modal.hide();
+//  };
+    $scope.images=[
+        {image:"img/a1.png"},
+        {image:"img/a2.png"},
+        {image:"img/a3.png"},
+        {image:"img/a4.png"},
+        {image:"img/a5.png"},
+        {image:"img/dabba.png"}
+    ]
+    $scope.current = 'img/ionic.png';
+  
+})
+.controller('RiderModalCtrl', function($scope, $ionicModal) {
+  
+   $ionicModal.fromTemplateUrl('riderform.html', {
+    scope: $scope,
+       animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+    $scope.openModal = function() {
+    $scope.modal.show();
+  };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+    $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  
+
+<<<<<<< HEAD
+  
+})
+.controller('HomeCtrl', function($scope, $ionicModal) {
   $scope.items = [
   { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
      { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"},
@@ -151,6 +258,8 @@ angular.module('starter.controllers', [])
   
 })
 
+=======
+>>>>>>> origin/master
 .controller('NotifCtrl', function($scope) {
   $scope.notifs = [
   { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"}
@@ -158,6 +267,7 @@ angular.module('starter.controllers', [])
   ];
      
 })
+<<<<<<< HEAD
 .controller('UptoursCtrl', function($scope) {
   $scope.notifs = [
   { name:"mustafa khalid", to:"nowshera",from:"lahore",image:"img/76.jpg", date:"23/06/2016"}
@@ -165,6 +275,8 @@ angular.module('starter.controllers', [])
   ];
      
 })
+=======
+>>>>>>> origin/master
 
 
 .controller('MyCtrl', function($scope) {
