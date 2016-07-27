@@ -39,16 +39,18 @@
     url: '/search',
     views: {
       'menuContent': {
-        templateUrl: 'search.html'
+        templateUrl: 'search.html',
+           controller: 'MyCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.notif', {
+      url: '/notif',
       views: {
         'menuContent': {
-          templateUrl: 'browse.html'
+          templateUrl: 'notif.html',
+            controller: 'NotifCtrl'
         }
       }
     })
@@ -61,16 +63,22 @@
         }
       }
     })
-    .state('app.login', {
-      url: '/login',
+   .state('profile', {
+    url: '/profile',
+    templateUrl: 'profile.html',
+      controller: 'ProfileCtrl'
+  })
+  .state('app.brow', {
+      url: '/brow',
       views: {
         'menuContent': {
-          templateUrl: 'login.html',
-          controller: 'HomeCtrl'
+          templateUrl: 'brow.html',
+            controller: 'BrowCtrl'
+         
         }
       }
     })
-
+   
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -80,7 +88,6 @@
       }
     }
   });
-  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
 });
