@@ -54,6 +54,15 @@
         }
       }
     })
+   .state('app.uptours', {
+      url: '/uptours',
+      views: {
+        'menuContent': {
+          templateUrl: 'uptours.html',
+            controller: 'UptoursCtrl'
+        }
+      }
+    })
     .state('app.home', {
       url: '/home',
       views: {
