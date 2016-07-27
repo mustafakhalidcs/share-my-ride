@@ -54,13 +54,23 @@ angular.module('starter.controllers', [])
      
 })
 .controller('BrowCtrl', function($scope) {
+<<<<<<< HEAD
   $scope.imges=[
+=======
+  $scope.message="Hello from BrowCtrl";
+  var images=[
+>>>>>>> refs/remotes/origin/master
         {image:"img/bg.png"},
         {image:"img/ionic.png"},
         {image:"img/bg1.png"}
        
     ];
+<<<<<<< HEAD
     $scope.current = '';
+=======
+    $scope.url="img/bg.png";
+    $scope.album = images;
+>>>>>>> refs/remotes/origin/master
      
 })
 .controller('ModalCtrl', function($scope, $ionicModal) {
