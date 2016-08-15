@@ -1,73 +1,50 @@
-<!--
- <ion-modal-view>
-        <ion-header-bar class="bar bar-header bar-positive">
-          <h1 class="title">New Contact</h1>
-          <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
-        </ion-header-bar>
-        <ion-content class="padding">
-          <div class="list" style="background:transparent;">
-            <label class="item item-input">
-              <span class="input-label">First Name</span>
-              <input ng-model="newUser.firstName" type="text">
-            </label>
-            <label class="item item-input">
-              <span class="input-label">Last Name</span>
-              <input ng-model="newUser.lastName" type="text">
-            </label>
-            <label class="item item-input">
-              <span class="input-label">Email</span>
-              <input ng-model="newUser.email" type="text">
-            </label>
-            <button class="button button-full button-positive" ng-click="createContact(newUser)">Create</button>
-          </div>
-        </ion-content>
-      </ion-modal-view>-->
-<ion-modal-view style="background:transparent;">
+
+<ion-modal-view class="transparent">
        
         <ion-content class="padding dform" has-bouncing="false" >
          
             <div class="row" >
-            <div class="col col-80" style="background:#f3eeda;">
+            <div class="col col-80 fond" >
                
           <div class="list"  >
                 <div class="item item-avatar item-text-wrap" style="padding-top:25px; ">
                 <img ng-src="{{ current }}"/>
-                   <h2 style="color:#0f637d; word-wrap:break-word;">Choose your vehicle</h2>
+                   <h2 class="blue">Choose your vehicle</h2>
                 </div>
                 <div class="item item-icon-left item-right">
                    <i class="icon ion-location"></i>
-      <input type="text" placeholder="Current Location">
+                   <input type="text" placeholder="Current Location">
+               </div>
+               <div class="item item-icon-left item-right">
+                   <i class="icon ion-arrow-graph-up-right"></i>
+                   <input type="text" placeholder="Destination">
+               </div>
+               <div class="item item-icon-left item-right">
+                   <i class="icon ion-map"></i>
+                   <input type="text" placeholder="Route">
+               </div>
+               <div class="item item-icon-left item-right">
+                   <i class="icon ion-android-calendar"></i>
+                   <input type="text" placeholder="Date">
               </div>
               <div class="item item-icon-left item-right">
-                   <i class="icon ion-arrow-graph-up-right"></i>
-      <input type="text" placeholder="Destination">
-                  </div>
-                <div class="item item-icon-left item-right">
-                   <i class="icon ion-map"></i>
-      <input type="text" placeholder="Route">
-              </div>
-                <div class="item item-icon-left item-right">
-                   <i class="icon ion-android-calendar"></i>
-      <input type="text" placeholder="Date">
-              </div>
-                <div class="item item-icon-left item-right">
                    <i class="icon ion-android-time"></i> 
-      <input type="text" placeholder="Time">
+                   <input type="text" placeholder="Time">
               </div>
-                <div class="item item-icon-left item-right">
+              <div class="item item-icon-left item-right">
                    <i class="icon ion-ios-people"></i>  
-      <input type="text" placeholder="Per head charge">
+                   <input type="text" placeholder="Per head charge">
               </div>
-                <div class="item item-icon-left item-right">
+              <div class="item item-icon-left item-right">
                    <i class="icon ion-android-car"></i> 
-      <input type="text" placeholder="Available seats">
+                   <input type="text" placeholder="Available seats">
               </div>
-               <div class="item item-icon-left item-center">
-                  <div class="buttons" style="right:-14px !important;">
-                    <button class="button button-clear cancel " ng-click="modal.hide()" style=" white-space:nowrap;">
+              <div class="item item-icon-left item-center">
+                  <div class="buttons rite"  >
+                    <button class="button button-clear cancel gren " ng-click="modal.hide()" >
                       Cancel
                     </button>
-                    <button class="button button-clear post" style=" white-space:nowrap;">
+                    <button class="button button-clear post blue" >
                    Post
                     </button>
                 </div>
@@ -75,15 +52,15 @@
             </div>
             </div>
                 
-            <div class="col col-20" style="background:#489ab3;padding-top:30px;">
+            <div class="col col-20 bluediv">
                 <div class="list" ng-repeat="img in images" > 
                     <div id="picture">
-<a class="small" href="#nogo" title="small image" ><img ng-src="{{img.image}}" ng-click="current='img/76.jpg'" class="imgo" style="width:20px; height:20px;" title="small image" /><img class="large" ng-src="{{img.image}}" title="large image" />
-</a>
+                        <a class="small" href="#nogo" title="small image" ><img ng-src="{{img.image}}" ng-click="current='img/76.jpg'"                                   class="icosize"  title="small image" /><img class="large" ng-src="{{img.image}}" title="large image" />
+                        </a>
                     </div>
                 </div>
             </div>
-            </div>
-        </ion-content>
-      </ion-modal-view>
+    </div>
+ </ion-content>
+</ion-modal-view>
 

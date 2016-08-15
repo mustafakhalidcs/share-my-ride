@@ -51,7 +51,7 @@
         'menuContent': {
           templateUrl: 'notif.html',
             controller: 'NotifCtrl'
-<<<<<<< HEAD
+//<<<<<<< HEAD
         }
       }
     })
@@ -61,8 +61,8 @@
         'menuContent': {
           templateUrl: 'uptours.html',
             controller: 'UptoursCtrl'
-=======
->>>>>>> origin/master
+//=======
+//>>>>>>> origin/master
         }
       }
     })
