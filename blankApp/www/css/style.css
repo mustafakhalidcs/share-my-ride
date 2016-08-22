@@ -15,19 +15,27 @@
   background-image: url('../img/bg1.png');
 }
 .bg2{
+/*
      background-repeat: no-repeat;
-/*  background-position:top right;*/
+
     background-size:100% 100%;
     background-attachment:fixed;
   background-image: url('../img/bg.png');
+    */
+/*    background:#91ABA4;*/
+     background: #648880;
+  background: linear-gradient(to left, #86969A ,#CEBEB8,#6D7777, #CCBEA5 85%, #949696);
 }
 /*<<<<<<< HEAD*/
 .bg5{
+    background:#4d716a;
+/*
      background-repeat: no-repeat;
-/*  background-position:top right;*/
+
     background-size:100% 100%;
     background-attachment:fixed;
-  background-image: url('../img/bg5.jpg');
+*/
+/*  background-image: url('../img/bg5.jpg');*/
 }
 .transparent{
     background:transparent;
@@ -37,6 +45,9 @@
 }
 .rite{
   right:-14px !important;
+}
+.pad20{
+      padding:20px;
 }
 .pad10{
     padding:10px 0px;
@@ -188,6 +199,7 @@ h2{
     text-align:center;
     color:#47caaa;
 }
+/*
 .dform .item{
     background:transparent;
     border:0px;
@@ -199,15 +211,14 @@ h2{
     display:block;
     margin:5px auto;
 }
-.dform .icon{
-   color:#004965;
-}
+
 .dform input{
     margin:10px;
         border-top: 3px inset #2fb9ab;
     background: #75b1be;
     color: #fff;
     padding-left:5px;
+*/
 /*
     width:50%;
     float:right;
@@ -236,14 +247,24 @@ h2{
     background:#489ab3;
     padding-top:30px;
 }
+.dform label{
+    background:transparent;
+    border:0px;
+}
 .dform input::-webkit-input-placeholder {
- color:    white;
+/* color:    white;*/
+    color:grey;
+}
+.dform .icon{
+   color:#004965;
 }
 .dform input::-moz-placeholder {
-    color:white;
+/*    color:white;*/
+     color:grey;
 }
 .dform input::-moz-placeholder {
-    color:white;   
+/*    color:white;   */
+     color:grey;
 }
 .dform .cancel{
      white-space:nowrap;
@@ -255,3 +276,28 @@ h2{
      white-space:nowrap;
     font-weight:bold;
 }
+input.ng-invalid {
+    border:1px solid grey;
+}
+input.ng-valid {
+    border:1px solid darkgreen;
+}
+/*
+input.ng-invalid input.ng-dirty{
+   background:#FA787E;
+}
+
+input.ng-valid input.ng-dirty{
+ background:#78FA89;
+}
+*/
+/*
+input.ng-pristine {
+    background-color:lightblue;
+}
+*/
+/*
+input.ng-dirty {
+    background-color:pink;
+}
+*/

@@ -7,15 +7,15 @@
             <h2 class="blue cap">peshawar - lahore </h2>
             <h3>with <span>Anmol Irfan  </span> </h3>
             <label>27/3/2016</label>
-         <div class="circle-text"><div><h3 style="padding-top:40%;"><timer interval="1000">{{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer></h3><h3 style="padding-top:3%;"> am</h3></div></div>
+        
               <div class="item item-button-right no-border transparent" >
-                <div class="buttons rite" >
+                <div class="buttons rite " ng-controller="demoCtrl as demo">
+<!--                   <button class="button bluebtn " onclick="sweetAlert('Greetings', 'Hi', 'error');"  > -->
                     <button class="button bluebtn " >
-                      Accept
+                     Update Plan
                     </button>
-                    <button class="button grenbtn " >
-                   Reject
-                    </button>
+              
+                     <button class="button grenbtn " ng-click="demo.confirm()">Cancel Plan</button>
                 </div>
              </div>
            </div>

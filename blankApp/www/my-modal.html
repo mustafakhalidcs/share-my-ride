@@ -1,66 +1,86 @@
 
 <ion-modal-view class="transparent">
        
-        <ion-content class="padding dform" has-bouncing="false" >
-         
-            <div class="row" >
-            <div class="col col-80 fond" >
-               
-          <div class="list"  >
-                <div class="item item-avatar item-text-wrap" style="padding-top:25px; ">
-                <img ng-src="{{ current }}"/>
-                   <h2 class="blue">Choose your vehicle</h2>
-                </div>
-                <div class="item item-icon-left item-right">
-                   <i class="icon ion-location"></i>
-                   <input type="text" placeholder="Current Location">
-               </div>
-               <div class="item item-icon-left item-right">
-                   <i class="icon ion-arrow-graph-up-right"></i>
-                   <input type="text" placeholder="Destination">
-               </div>
-               <div class="item item-icon-left item-right">
-                   <i class="icon ion-map"></i>
-                   <input type="text" placeholder="Route">
-               </div>
-               <div class="item item-icon-left item-right">
-                   <i class="icon ion-android-calendar"></i>
-                   <input type="text" placeholder="Date">
-              </div>
-              <div class="item item-icon-left item-right">
-                   <i class="icon ion-android-time"></i> 
-                   <input type="text" placeholder="Time">
-              </div>
-              <div class="item item-icon-left item-right">
-                   <i class="icon ion-ios-people"></i>  
-                   <input type="text" placeholder="Per head charge">
-              </div>
-              <div class="item item-icon-left item-right">
-                   <i class="icon ion-android-car"></i> 
-                   <input type="text" placeholder="Available seats">
-              </div>
-              <div class="item item-icon-left item-center">
-                  <div class="buttons rite"  >
-                    <button class="button button-clear cancel gren " ng-click="modal.hide()" >
-                      Cancel
-                    </button>
-                    <button class="button button-clear post blue" >
-                   Post
-                    </button>
-                </div>
-              </div>
+        <ion-content class="padding dform " has-bouncing="false" >
+  
+                      <div class="list list-inset white pad20 ">
+          <h3 class="blue">Fill Form</h3>
+                          <form    
+name="myForm" novalidate>
+
+               <p>
+    <label class="item item-input">
+     <i class="icon ion-location placeholder-icon"></i>
+  <input type="text" name="location" ng-model="location" placeholder="Current Location" required>
+        <p>
+  <span style="color:red" ng-show="myForm.location.$dirty && myForm.location.$invalid ">
+
+  <span ng-show="myForm.location.$error.required">Location is required.</span>
+  </span></p>
+    </label>
+</p>
+               <p>
+    <label class="item item-input">
+     <i class="icon ion-arrow-graph-up-right placeholder-icon"></i>
+  <input type="text" name="destination" ng-model="destination" placeholder="destination" required>
+        <p>
+  <span style="color:red" ng-show="myForm.destination.$dirty && myForm.destination.$invalid ">
+  <span ng-show="myForm.destination.$error.required">Destination is required.</span>
+  </span></p>
+    </label>
+</p>
+               <p>
+    <label class="item item-input">
+     <i class="icon ion-map placeholder-icon"></i>
+  <input type="text" name="map" ng-model="map" placeholder="Route" required>
+  <p><span style="color:red" ng-show="myForm.map.$dirty && myForm.map.$invalid ">
+  <span ng-show="myForm.map.$error.required">Provide the route.</span>
+  </span></p>
+    </label>
+</p>
+               <p>
+    <label class="item item-input">
+     <i class="icon ion-android-calendar placeholder-icon"></i>
+  <input type="date" name="date" ng-model="date" placeholder="Date" required>
+  <p><span style="color:red" ng-show="myForm.date.$dirty && myForm.date.$invalid ">
+  <span ng-show="myForm.date.$error.required">Mention the date.</span>
+  </span></p>
+    </label>
+</p>
+               <p>
+    <label class="item item-input">
+     <i class="icon ion-ios-people placeholder-icon"></i>
+  <input type="number" name="phc" ng-model="phc" placeholder="Per head charge" required>
+  <p><span style="color:red" ng-show="myForm.phc.$dirty && myForm.phc.$invalid ">
+  <span ng-show="myForm.phc.$error.required">Mention per head charge.</span>
+  </span></p>
+    </label>
+</p>
+               <p>
+    <label class="item item-input">
+     <i class="icon ion-android-car placeholder-icon"></i>
+  <input type="number" name="as" ng-model="as" placeholder="Available Seats" required>
+  <p><span style="color:red" ng-show="myForm.as.$dirty && myForm.as.$invalid ">
+  <span ng-show="myForm.as.$error.required">No. of seats required.</span>
+  </span></p>
+    </label>
+</p>
+                              <div class="row" >
+                                  <div class="col-50">
+                                       <button class="button  button-small button-block buttondr bluebtn"  type="submit" ng-disabled="myForm.location.$dirty && myForm.location.$invalid ||
+  myForm.destination.$dirty && myForm.destination.$invalid ||myForm.route.$dirty && myForm.route.$invalid || myForm.date.$dirty && myForm.date.$invalid || myForm.phc.$dirty && myForm.phc.$invalid || myForm.as.$dirty && myForm.as.$invalid">
+  Post
+</button>
+                                      </div>
+                                <div class="col-50">  <button class="button button-small button-calm button-block" ng-click="modal.hide()" >
+  Cancel
+</button>
+                                  </div>
+</div>
+
+
+</form>
             </div>
-            </div>
-                
-            <div class="col col-20 bluediv">
-                <div class="list" ng-repeat="img in images" > 
-                    <div id="picture">
-                        <a class="small" href="#nogo" title="small image" ><img ng-src="{{img.image}}" ng-click="current='img/76.jpg'"                                   class="icosize"  title="small image" /><img class="large" ng-src="{{img.image}}" title="large image" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-    </div>
  </ion-content>
 </ion-modal-view>
 
