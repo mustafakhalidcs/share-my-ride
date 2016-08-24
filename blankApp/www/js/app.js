@@ -40,17 +40,29 @@
     views: {
       'menuContent': {
         templateUrl: 'search.html',
-           controller: 'MyCtrl'
+         
       }
     }
   })
-
+   
   .state('app.notif', {
       url: '/notif',
       views: {
         'menuContent': {
           templateUrl: 'notif.html',
             controller: 'NotifCtrl'
+//<<<<<<< HEAD
+        }
+      }
+    })
+   .state('app.uptours', {
+      url: '/uptours',
+      views: {
+        'menuContent': {
+          templateUrl: 'uptours.html',
+            controller: 'UptoursCtrl'
+//=======
+//>>>>>>> origin/master
         }
       }
     })
@@ -68,26 +80,30 @@
     templateUrl: 'profile.html',
       controller: 'ProfileCtrl'
   })
-  .state('app.brow', {
-      url: '/brow',
-      views: {
-        'menuContent': {
-          templateUrl: 'brow.html',
-            controller: 'BrowCtrl'
-         
-        }
-      }
-    })
-   
+
+//  .state('app.brow', {
+//      url: '/brow',
+//      views: {
+//        'menuContent': {
+//          templateUrl: 'brow.html',
+//            controller: 'BrowCtrl'
+//         
+//        }
+//      }
+//    })
   .state('app.single', {
-    url: '/playlists/:playlistId',
+    url: '/profile/:profileId',
     views: {
       'menuContent': {
-        templateUrl: 'playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'profile.html',
+        controller: 'ProfileCtrl'
       }
     }
   });
+
+   
+   
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
 });

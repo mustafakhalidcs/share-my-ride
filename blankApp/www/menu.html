@@ -1,18 +1,20 @@
 <ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-nav-bar class=" bar-header bar-calm">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-
+    <ion-nav-bar class=" bar-header ab">
+    
+  <ion-nav-back-button class="button-clear white"><i class="icon ion-chevron-left " style="color:#fff;"></i> Back</ion-nav-back-button>
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        <button class="button button-icon  ion-navicon" menu-toggle="left">
         </button>
          
       </ion-nav-buttons>
         
          <ion-nav-buttons side="right">
-      <img class="button button-clear" src="img/login.png">
+                      
+<button class="button button-icon  ion-log-in" ui-sref="#signin"  >
         </button>
+<!--    <img class="button button-clear" src="img/login.png">-->
+
          
       </ion-nav-buttons >
         
@@ -26,12 +28,12 @@
       <h1 class="title">Left</h1>
     </ion-header-bar>
 -->
-    <ion-content style="background:#93c7c3;" has-bouncing="false">
+    <ion-content style="background:#93c7c3;" has-bouncing="false" y-scroll="false">
         <ul class="list ul1">
-          <div class="item item-thumbnail pro " menu-close >
-            <img  src="//ionicframework.com/img/docs/spengler.jpg">
+          <div class="item item-avatar pro " menu-close >
+            <img  src="img/76.jpg">
              
-            <h3 style="color:#fff;">Mustafa Khalid</h3>
+            <h3 style="color:#fff;">Anmol Irfan</h3>
                <p style="color:#fff;">22 years old</p>
           </div>
 <!--            <a href="#/app/home" class="item icon ion-star" menu-close ng-click="login()" style="background:transparent;">Login</a>-->
@@ -39,10 +41,16 @@
     <i class="icon ion-person"></i>
     Profile
   </a>
-<a class="item item-icon-left " href="#app/brow"  menu-close style="background:transparent;">
+
+<!--<<<<<<< HEAD-->
+            <a class="item item-icon-left " href="#app/uptours"  menu-close style="background:transparent;">
     <i class="icon ion-model-s"></i>
-    Upcoming Tours
+    Up coming Tours
   </a>
+<!--
+=======
+>>>>>>> origin/master
+-->
             <a class="item item-icon-left "  menu-close href="#app/notif" style="background:transparent;">
     <i class="icon ion-pull-request"></i>
     View Requests
