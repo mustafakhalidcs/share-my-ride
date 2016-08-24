@@ -4,6 +4,9 @@
   background-position:center;
   background-image: url('../img/login.png');
 }
+.ab{
+    background-color:#0076a3;
+}
 .bg1{
      background-repeat: no-repeat;
 /*  background-position:top right;*/
@@ -12,22 +15,124 @@
   background-image: url('../img/bg1.png');
 }
 .bg2{
+/*
      background-repeat: no-repeat;
-/*  background-position:top right;*/
+
     background-size:100% 100%;
     background-attachment:fixed;
   background-image: url('../img/bg.png');
+    */
+/*    background:#91ABA4;*/
+     background: #648880;
+  background: linear-gradient(to left, #86969A ,#CEBEB8,#6D7777, #CCBEA5 85%, #949696);
 }
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 .bg5{
+    background:#82bbb0;
+/*
      background-repeat: no-repeat;
-/*  background-position:top right;*/
+
     background-size:100% 100%;
     background-attachment:fixed;
-  background-image: url('../img/bg5.jpg');
+*/
+/*  background-image: url('../img/bg5.jpg');*/
 }
+.transparent{
+    background:transparent;
+}
+.cap{
+  text-transform:capitalize;
+}
+.rite{
+  right:-14px !important;
+}
+.pad20{
+      padding:20px;
+}
+.pad10{
+    padding:10px 0px;
+}
+.pad0{
+    padding:0px;
+}
+.home ion-item , .notif ion-item{
+border:none; padding-top:0px; 
+}
+.home .card{
+    margin:0px; 
+}
+.home .item .item-thumbnail-left{
+    padding-bottom:0px;padding-right:0px;background:#ebebeb;
+}
+.home .item > label{
+    background:#b3cfda; padding:2px 10px; float:right;
+}
+
+.home .item  span{
+    font-weight:bold;
+      color:#155877;
+    text-transform:capitalize;
+}
+.home ion-footer-bar{
+    background:transparent; border-top:5px solid #ded3c4; height:66px;"
+}
+.home .buttondr{
+     font-weight:bold; margin-top:0px; padding:2px; height:41px;
+}
+.notif .card{
+      margin: 10px 10px 0px 10px; 
+}
+.notif.item > label{
+   font-size: 11px;
+}
+.notif .item  span{
+   
+    color:#155877;
+    text-transform:capitalize;
+}
+.no-border{
+    border:none;
+}
+.msg{
+     font-family:script;
+    padding:10px 0px;
+}
+.uptours .card{
+      margin: 10px 10px 0px 10px; 
+}
+.uptours.item > label{
+   font-size: 11px;
+}
+.uptours .item  span{
+    color:#155877;
+    text-transform:capitalize;
+}
+.profile .card{
+      margin: 10px 10px 0px 10px; 
+}
+.profile.item > label{
+   font-size: 11px;
+}
+.profile .item  span{
+    color:#fff;
+    text-transform:capitalize;
+    float:left;
+}
+.profile .item  p{
+color:#fff; font-weight:bold; word-wrap:break-word;
+}
+.profileitem{
+   padding:7px 2px 0px 7px;background:#509abc;  
+}
+.profilediv {
+    background:#47caaa; color:#155877; padding:5px 20px; margin-bottom:10px; color:#fff; border-top: 2px inset rgba(28, 68, 68, 0.35);
+}
+
+
+/*
 =======
 >>>>>>> origin/master
+*/
 .button{
     color:#fff;
 }
@@ -36,6 +141,13 @@
 }
 h2{
     font-weight:bold !important;
+}
+.joinbtn{
+    background:#2ca6b3;
+    margin-bottom:0px !important;
+}
+.joinbtn:hover{
+    background:#29939e;   margin-bottom:0px; color:#fff;
 }
 .ul1 >.item>.icon {
     font-size:20px;
@@ -61,14 +173,7 @@ h2{
 .ul1> .item-thumbnail>img{
     border-radius:50%;
 }
-.ba1:hover{
-    background:#0f4056 !important;
-    color:#fff;
-}
-.br2:hover{
-    background:#0badad !important;
-    color:#fff;
-}
+
 .circle-text {
     width:100%;
     height:100%;
@@ -79,12 +184,8 @@ h2{
     width: 100%;
     height:0;
     padding-bottom: 100%;
-<<<<<<< HEAD
     background: transparent; 
-    border:2px dotted #000;
-=======
     background: rgba(255,255,255,0.8); 
->>>>>>> origin/master
     -moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
     border-radius: 50%;
@@ -98,13 +199,7 @@ h2{
     text-align:center;
     color:#47caaa;
 }
-.bp{
-    background:#2ca6b3;
-    margin-bottom:0px !important;
-}
-.bp:hover{
-    background:#29939e;   margin-bottom:0px; color:#fff;
-}
+/*
 .dform .item{
     background:transparent;
     border:0px;
@@ -116,15 +211,14 @@ h2{
     display:block;
     margin:5px auto;
 }
-.dform .icon{
-   color:#004965;
-}
+
 .dform input{
     margin:10px;
         border-top: 3px inset #2fb9ab;
     background: #75b1be;
     color: #fff;
     padding-left:5px;
+*/
 /*
     width:50%;
     float:right;
@@ -146,33 +240,64 @@ h2{
 #picture a .large {display:block; position:relative; width:0; height:0; border:0;  left:0;}
 #picture a.small:hover .large {display:block; position:relative;  left:-210px; width:200px; height:200px; z-index:1000;background:#89c6d4;
      padding:10px 10px; }
-
-
+.icosize{
+   width:20px; height:20px;
+}
+.bluediv{
+    background:#489ab3;
+    padding-top:30px;
+}
+.dform label{
+    background:transparent;
+    border:0px;
+}
 .dform input::-webkit-input-placeholder {
- color:    white;
+/* color:    white;*/
+    color:grey;
 }
-<<<<<<< HEAD
-
+.dform .icon{
+   color:#004965;
+}
 .dform input::-moz-placeholder {
-    color:white;
-    
+/*    color:white;*/
+     color:grey;
 }
-
-=======
-
 .dform input::-moz-placeholder {
-    color:white;
-    
+/*    color:white;   */
+     color:grey;
 }
-
->>>>>>> origin/master
 .dform .cancel{
      white-space:nowrap;
-    color:#10645b;
+     color:#119696;
     font-weight:bold;
 }
 .dform .post{
+     color:#155877;
      white-space:nowrap;
-    color:#25998d;
     font-weight:bold;
 }
+input.ng-invalid {
+    border:1px solid grey;
+}
+input.ng-valid {
+    border:1px solid darkgreen;
+}
+/*
+input.ng-invalid input.ng-dirty{
+   background:#FA787E;
+}
+
+input.ng-valid input.ng-dirty{
+ background:#78FA89;
+}
+*/
+/*
+input.ng-pristine {
+    background-color:lightblue;
+}
+*/
+/*
+input.ng-dirty {
+    background-color:pink;
+}
+*/
